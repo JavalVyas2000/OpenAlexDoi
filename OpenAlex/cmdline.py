@@ -12,7 +12,7 @@ from .works import Works
     type=click.Choice(["bibtex", "ris"]),
     help="Output format (default: bibtex)",
 )
-def citation(doi, citeformat):
+def citation(doi, format):
     """
     Outputs RIS or Bibtex format for a given Doi string.
     """
