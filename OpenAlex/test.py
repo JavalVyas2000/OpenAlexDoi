@@ -14,7 +14,7 @@ def test_bibtex():
  """
  work = Works("https://doi.org/10.1021/acscatal.5b00538")
  try:
-  assert REF_BIBTEX == work.bibtex():
-   print('Test Completed Successfully')
+  assert REF_BIBTEX == work.bibtex()
+  print('Test Completed Successfully')
  exception:
   print('Error!!!')
