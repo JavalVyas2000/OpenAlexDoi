@@ -1,3 +1,8 @@
+"""
+This is the file which has the openAlex works, 
+and is used to access the bibtex and ris formats 
+for the given Doi string.
+"""
 import base64
 import requests
 
