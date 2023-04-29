@@ -57,7 +57,6 @@ class Works:
 
         pages = '-'.join([self.data['biblio']['first_page'], self.data['biblio']['last_page']])
         year = self.data['publication_year']
-
         seq = (
             f'author = {authors},'
             f'title = {title},'
@@ -69,7 +68,6 @@ class Works:
             f'url = "{self.oaid}",'
             f'DATE_ADDED = {self.data["updated_date"]}'
         )
-
         return seq
     def ris(self):
         """
