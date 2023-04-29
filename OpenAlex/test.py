@@ -22,7 +22,7 @@ ER  -<pre><br><a href="data:text/plain;base64,VFkgIC0gSk9VUgpBVSAgLSBKb2huIFIuIE
 
 def test_ris():
  """
- The below function is implemented to test the bibtex
+ The below function is implemented to test the ris
  """
  work = Works("https://doi.org/10.1021/acscatal.5b00538")
  assert REF_RIS == work.ris(),'Error!!!'
