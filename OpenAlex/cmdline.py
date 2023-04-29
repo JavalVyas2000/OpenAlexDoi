@@ -2,7 +2,7 @@
 This is the commandline prompt
 """
 import click
-from .works import Works
+from OpenAlex.works import Works
 
 @click.command()
 @click.argument("doi")
