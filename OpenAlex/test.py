@@ -16,5 +16,5 @@ def test_bibtex():
  try:
   assert REF_BIBTEX == work.bibtex()
   print('Test Completed Successfully')
- exception:
+ except:
   print('Error!!!')
