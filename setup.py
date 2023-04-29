@@ -11,7 +11,7 @@ setup(name='openalex',
       license='MIT',
       packages=['OpenAlex'],
       setup_requires=["nose>=1.0"],
-      install_requires=["bibtexparser","IPython"],
+      install_requires=["bibtexparser"],
       entry_points={
         "console_scripts": ["cite = openalex.cmdline:cite"]},
       long_description='''to get citations bibtex/ris''')
