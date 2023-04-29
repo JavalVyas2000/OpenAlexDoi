@@ -21,4 +21,4 @@ def cite(doi, citeformat):
     if citeformat == "bibtex":
         print(w_0.bibtex())
     elif citeformat == "ris":
-        print(w_0.ris()
+        print(w_0.ris())
