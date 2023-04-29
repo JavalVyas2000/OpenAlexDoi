@@ -1,5 +1,5 @@
 import re
-from ..works import Works
+from .works import Works
 
 ref_bibtex = """author = {John R. Kitchin},
  journal = {ACS Catalysis},
