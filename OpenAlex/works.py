@@ -1,6 +1,6 @@
 """
-This is the file which has the openAlex works, 
-and is used to access the bibtex and ris formats 
+This is the file which has the openAlex works,
+and is used to access the bibtex and ris formats
 for the given Doi string.
 """
 import base64
@@ -25,12 +25,6 @@ class Works:
         self.oaid = oaid
         self.req = requests.get(f'https://api.openalex.org/works/{oaid}')
         self.data = self.req.json()
-        
-    def new(self):
-        titles = self.data['title']
-        volume = self.data['biblio']['volume']
-        issue = self.data['biblio']['issue']
-        return titles
 
     def bibtex(self):
         """
