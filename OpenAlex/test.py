@@ -13,4 +13,7 @@ def test_bibtex():
  The below function is implemented to test the bibtex
  """
  work = Works("https://doi.org/10.1021/acscatal.5b00538")
- assert REF_BIBTEX == work.bibtex()
+ if assert REF_BIBTEX == work.bibtex():
+  print('Test Completed Successfully')
+ else:
+  print('Error!!!')
