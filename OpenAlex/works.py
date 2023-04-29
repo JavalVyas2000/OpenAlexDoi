@@ -1,10 +1,32 @@
-import time
+import base64
 import requests
-# import bibtexparser
-# from bibtexparser.bwriter import BibTexWriter
-# from bibtexparser.bibdatabase import BibDatabase
 
 class Works:
+    """
+    A class representing a scholarly work.
+
+    Attributes:
+        oaid (str): The OpenAlex identifier of the work.
+        data (dict): The JSON data for the work obtained from the OpenAlex API.
+    """
+
+    def __init__(self, oaid):
+        """
+        Constructs a new Works object.
+
+        Args:
+            oaid (str): The OpenAlex identifier of the work.
+        """
+        self.oaid = oaid
+        self.req = requests.get(f'https://api.openalex.org/works/{oaid}')
+        self.data = self.req.json()
+        
+    def new(self):
+        titles = self.data['title']
+        volume = self.data['biblio']['volume']
+        issue = self.data['biblio']['issue']
+        return titles
+
     def bibtex(self):
         """
         Returns the BibTeX string for the work.
